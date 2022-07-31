@@ -11,4 +11,4 @@
 | -------------------- | ----------- | 
 | Search / Traversal   | O(n )       |
 | Insert               | O(1)        | 
-| Deletion             | O(1)  if you go with loops and O(n) if you go with recursion |
+| Deletion             | O(1)  if you go with loops <br> O(n) if you go with recursion |
