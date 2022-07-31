@@ -18,35 +18,35 @@ class LinkedList:
         self.head = new_node
 
     '''
-    Given a reference to the head of a list and a key, delete the first occurrence of key in linked list
+    Given a reference to the head of a list and a value, delete the first occurrence of value in linked list
     '''
 
-    def deleteNode(self, key):
+    def deleteNode(self, value):
         temp = self.head
 
-        # If head node itself holds the key to be deleted
+        # If head node itself holds the value to be deleted
         if temp is not None:
-            if temp.data == key:
+            if temp.data == value:
                 self.head = temp.next
                 temp = None
                 return
 
-        # Search for the key to be deleted, keep track of the
+        # Search for the value to be deleted, keep track of the
         # previous node as we need to change 'prev.next'
         prev = None
         while temp is not None:
-            if temp.data == key:
+            if temp.data == value:
                 break
 
             prev = temp
             temp = temp.next
 
-        # if key is not present in the linked list
+        # if value is not present in the linked list
         if temp is None:
-            print("The key to be deleted is not present in the linked list")
+            print("The value to be deleted is not present in the linked list")
             return
 
-        # unlink the key to be deleted
+        # unlink the value to be deleted
         prev.next = temp.next
         temp = None
 
