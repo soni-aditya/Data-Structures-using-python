@@ -99,3 +99,10 @@ if __name__ == '__main__':
 
     # case 3
     inorderSuccessor(root, root.right.right)
+
+
+'''
+Time Complexity: O( n ), where n is the number of nodes in the tree. 
+
+Space complexity: O(n) for call stack  
+'''
