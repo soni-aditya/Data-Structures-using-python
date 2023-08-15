@@ -1,10 +1,13 @@
 # Python program for insert and search
-# operation in a Trie
-
 # https://www.geeksforgeeks.org/trie-insert-and-search/
+
+'''
+Operation	Time Complexity	Auxiliary Space
+Insertion	O(n)	O(n*m)
+Searching	O(n)	O(1)
+'''
  
 class TrieNode:
-     
     # Trie node class
     def __init__(self):
         self.children = [None]*26
@@ -13,7 +16,6 @@ class TrieNode:
         self.isEndOfWord = False
  
 class Trie:
-     
     # Trie data structure class
     def __init__(self):
         self.root = self.getNode()
