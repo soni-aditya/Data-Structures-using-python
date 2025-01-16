@@ -17,6 +17,6 @@ class LinkedList:
         if self.head is None:
             self.head = node
             self.tail = node
-        else:
-            for self.head.next is not None:
+        # else:
+            # for self.head.next is not None:
                 # self.head = 
